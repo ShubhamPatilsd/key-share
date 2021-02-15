@@ -75,7 +75,7 @@ function postChat(e){
     
     db.ref("sounds/"+Date.now()).set({
         embed: "https://www.youtube.com/embed/"+document.getElementById("url").value.slice(32)+"?start="+secondsCounter,
-        thumbnail: "http://img.youtube.com/vi/"+document.getElementById("url").value.slice(32)+"/maxresdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/"+document.getElementById("url").value.slice(32)+"/maxresdefault.jpg",
         title: document.getElementById("title").value
         
     });
