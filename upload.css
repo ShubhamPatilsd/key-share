@@ -53,8 +53,11 @@ html,body{
     font-family: 'product_sansregular';
     text-align: center;
     background-color: rgb(29,29,29);
-    overflow: hidden;
+    
 }
+
+
+a { color:white; }
 
 
 input[type=text]{
@@ -72,6 +75,11 @@ input[type=text]{
 }
 label{
     color: white;
+}
+
+.credit{
+    color: white;
+    margin-top: 100px;
 }
 
 .submit-btn{
