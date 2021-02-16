@@ -94,6 +94,7 @@ div.gallery {
     transition: 0.3s;
     border-radius: 10px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
   
   div.gallery:hover {
