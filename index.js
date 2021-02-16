@@ -68,4 +68,10 @@ fetchChat.on("child_added",function(snapshot){
 function darkMode(){
     let element = document.body;
     element.classList.toggle("dark-mode");
+    console.log(document.getElementById('dark-mode-label').value);
+    if(document.getElementById('dark-mode-label').innerHTML=="Dark Mode Toggle:"){
+        document.getElementById('dark-mode-label').innerHTML="Light Mode Toggle:"
+    }else{
+        document.getElementById('dark-mode-label').innerHTML="Dark Mode Toggle:"
+    }
 }
