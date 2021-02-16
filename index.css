@@ -48,7 +48,12 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face{
+  font-family: keyboard-font;
+  src: url('fonts/212Keyboard-lmRZ.otf');
+}
+
+
 html,body{
     font-family: 'product_sansregular';
 }
@@ -171,6 +176,9 @@ a:hover, a:active { text-decoration: none; }
 
 .centered{
   text-align: center;
+  font-family: keyboard-font;
+  font-size: 3em;
+  font-weight:50;
 }
 
 .swal-big{
