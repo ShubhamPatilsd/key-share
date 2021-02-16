@@ -52,6 +52,12 @@
   font-family: keyboard-font;
   src: url('fonts/212Keyboard-lmRZ.otf');
 }
+html,body{
+  font-family: 'product_sansregular';
+  padding-bottom: 75px;
+  background-color: rgb(24,26,27);
+  color: white;
+}
 #header-switch{
   display: inline;
 }
@@ -97,14 +103,23 @@
 
 
 .dark-mode{
-  background-color: rgb(24,26,27);
-  color: white;
+  /*background-color: rgb(24,26,27);
+  color: white;*/
+  background-color: white;
+  color: black;
 }
 
-html,body{
-    font-family: 'product_sansregular';
-    padding-bottom: 75px;
+.upload-btn h1 {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*font-size: 400%;*/
 }
+
+
 ul.navbar{
     list-style-type: none;
     margin: 0;

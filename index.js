@@ -28,9 +28,9 @@ function showTheSwal(s,titleThing){
 const fetchChat=db.ref("sounds/");
 fetchChat.on("child_added",function(snapshot){
     const message = snapshot.val();
-    let test="'"+message.embed+"','"+message.title+"'";
+    let test="`"+message.embed+"`,`"+message.title+"`";
     const msg = `<div class="responsive">
-    <div class="gallery" onclick="showTheSwal(`+test+`)">
+    <div class="gallery" onclick="showTheSwal(\`${message.embed}\`,\`${message.title}\`)">
         
             <img src="`+message.thumbnail+`" alt="Video Thumbail" width="1280" height="720">
         
@@ -66,8 +66,15 @@ fetchChat.on("child_added",function(snapshot){
                 */
 
 function darkMode(){
-    let element = document.body;
-    element.classList.toggle("dark-mode");
+
+    let elementBody = document.body;
+    let divs = document.getElementsByClassName("gallery");
+    elementBody.classList.toggle("dark-mode");
+    for(let i = 0;i<divs.length;i++){
+        let item=divs[i];
+        item.classList.toggle("dark-mode");
+    }
+    document.getElementsByTagName('html')[0].classList.toggle("dark-mode");
     console.log(document.getElementById('dark-mode-label').value);
     if(document.getElementById('dark-mode-label').innerHTML=="Dark Mode Toggle:"){
         document.getElementById('dark-mode-label').innerHTML="Light Mode Toggle:"
