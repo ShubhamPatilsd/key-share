@@ -76,9 +76,9 @@ function darkMode(){
     }
     document.getElementsByTagName('html')[0].classList.toggle("dark-mode");
     console.log(document.getElementById('dark-mode-label').value);
-    if(document.getElementById('dark-mode-label').innerHTML=="Dark Mode Toggle:"){
-        document.getElementById('dark-mode-label').innerHTML="Light Mode Toggle:"
-    }else{
+    if(document.getElementById('dark-mode-label').innerHTML=="Light Mode Toggle:"){
         document.getElementById('dark-mode-label').innerHTML="Dark Mode Toggle:"
+    }else{
+        document.getElementById('dark-mode-label').innerHTML="Light Mode Toggle:"
     }
 }
