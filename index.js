@@ -65,3 +65,7 @@ fetchChat.on("child_added",function(snapshot){
                 </div>
                 */
 
+function darkMode(){
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+}
