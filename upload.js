@@ -54,11 +54,20 @@ function postChat(e){
       confirmButtonText: 'Yes, post it!'
     }).then((result) => {
       if (result.isConfirmed) {
+        if(document.getElementById("url").value.trim()=="" && document.getElementById("timestamp").value.trim()=="" && document.getElementById("title").value.trim()==""){
+            Swal.fire(
+                'Error!',
+                'Please input valid values in the textboxes (no blanks)',
+                'error'
+            )
+            return;
+        }else{
         Swal.fire(
           'Sent!',
-          'The video and timestamp are posting. You will be redirected to the homepage soon',
+          'The video and timestamp are posting. You will be redirected to the homepage soon.',
           'success'
         )
+        }
 
         let timestamp=document.getElementById("timestamp").value.split(":");
     
